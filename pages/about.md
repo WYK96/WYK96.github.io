@@ -9,13 +9,12 @@ weight: 3
 
 现就读于华北电力大学控制与计算机工程学院计算机科学与技术专业
 
-这是我的个人主页，你可以在此了解到关于我的信息
-
 17600558165 \| wyk@ncepu.edu.cn \| wei967740
 
 ## 研究领域
 
 * 服装动画，包括布料变形分析、基于深度学习方法的虚拟服装生成等。
+* 深度几何学习，包括人体与服装变形关系的学习。
 * 虚拟现实，包括智能交互等。
 
 ## 教育背景
@@ -78,7 +77,7 @@ weight: 3
 
 <table class="tg">
 	<tr >
-		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="90%"></td>
+		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="70%"></td>
 		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;大部分成衣的设计以标准比例的人模作为参照，而对于非标准体型的顾客，标码服装的大小尺寸则很难与之进行有效匹配。此外，由于不同服装的款式差异明显，且针对局部特征鲜明身型的调整规则相对有限，根据不同顾客的体型设计并制作出尺码合适、与样衣款式一致的服装是一件耗时且困难的工作。基于此，提出了一种基于实例数据驱动的服装款式迁移方法，可以为具有鲜明局部特征的人体快速生成符合其体型的服装，以期为非标尺码人体的个性化服装定制提供辅助。</td>
 	</tr>
 </table>

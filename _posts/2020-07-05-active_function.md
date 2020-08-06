@@ -12,6 +12,10 @@ description: ReLU/ReLU6/LeakyReLU/PReLU/Sigmoid/tanh.
 
 # ReLU
 
+```python
+def relu(x):
+    return max(x, 0)
+```
 
 $$
 y=
@@ -26,6 +30,13 @@ $$
 
 # ReLU6
 
+这里为什么是6，而不是其它数字，其实是经过实验验证得来的，取6通常可以得到最好的结果。
+
+```python
+def relu6(x):
+    return min(max(x, 0), 6)
+```
+
 $$
 y=
 \begin{cases}
@@ -39,6 +50,19 @@ $$
 
 # LeakyReLU
 
+```python
+def leakyRelu(x, a):
+    # variable 'a' is a fixed coefficient 
+    return max(x, a * x)
+
+# more efficient implementation
+def leakyRelu(x, a, name="lrelu"):
+     with tf.variable_scope(name):
+         f1 = 0.5 * (1 + a)
+         f2 = 0.5 * (1 - a)
+         return f1 * x + f2 * abs(x)
+```
+
 $$
 y=
 \begin{cases}
@@ -51,6 +75,21 @@ $$
 
 # PReLU
 
+相较于LeakyReLU,PReLU的系数是可以变化的，出自这篇文章[Delving Deep into Rectifiers : Surpassing Human-Level Performance on ImageNet Classification](https://arxiv.org/pdf/1502.01852.pdf)，回头看看。
+
+```python
+def prelu(_x, name):
+    # variable 'a' is learnable
+    _alpha = tf.get_variable(name + "prelu",
+                             shape=_x.get_shape()[-1],
+                             dtype=_x.dtype,
+                             initializer=tf.constant_initializer(0.1))
+    pos = tf.nn.relu(_x)
+    neg = _alpha * (_x - tf.abs(_x)) * 0.5
+
+    return pos + neg
+```
+
 $$
 y=
 \begin{cases}
@@ -58,9 +97,15 @@ x, x > 0  \\
 ax, x \le 0\ and\ a\ is\ learnable  
 \end{cases}
 $$
+
 <img src="/blog_resources/active_function/prelu.png" width="95%">
 
 # Sigmoid
+
+```python
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+```
 
 $$
 y= \frac{1}{1+e^{-x}}
@@ -69,6 +114,11 @@ $$
 <img src="/blog_resources/active_function/sigmoid.png" width="95%">
 
 # tanh
+
+```python
+def tanh(x):
+    return (1 - np.exp(-2 * x)) / (1 + np.exp(-2 * x))
+```
 
 $$
 y= \frac{1 - e^{-2x}}{1 + e^{-2x}}
