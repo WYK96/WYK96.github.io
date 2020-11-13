@@ -39,7 +39,7 @@ model的文件组织结构如下所示：
 ```python
 - DMPL/SMPL
     - male                         # 男性
-        -model.npz
+        - model.npz
     - female                       # 女性
         - model.npz
     - neutral                      # 中性
