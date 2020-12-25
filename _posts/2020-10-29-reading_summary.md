@@ -54,10 +54,34 @@ Summary:服装动画创作过程中，设计师需要逐帧地指定不同运动
 
 **PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization**
 
-Summary:可以通过单视角图片重建出完整人体及服装的工作，方法分为几何重建和材质重建两个部分。几何重建阶段，网络首先通过encoder对每个像素点的特征进行编码，并根据相机参数估算坐标点的深度值，然后以特征向量和深度值为输入使用MLP预测像素点在网格内的概率；材质重建阶段，网络以单张图片及几何重建子网络编码的特征向量为输入，使用MLP预测像素点对应的RGB信息。方法相较于之前的工作效果更好，并且由于方法学习的是关于的像素点是否在网格内的函数，在存储上比较友好。缺点在于对于几何细节的重建效果不够理想，且重建效果依赖于较好的相机参数。
+Summary:可以通过单视角图片重建出完整人体及服装的工作，方法分为几何重建和材质重建两个部分。几何重建阶段，网络首先通过encoder(HourGlass)对每个像素点的特征进行编码，并根据相机参数估算坐标点的深度值，然后以特征向量和深度值为输入使用MLP预测像素点在网格内的概率；材质重建阶段，网络以单张图片及几何重建子网络编码的特征向量为输入，使用MLP预测像素点对应的RGB信息。方法相较于之前的工作效果更好，并且由于方法学习的是关于的像素点是否在网格内的函数，在存储上比较友好。缺点在于对于几何细节的重建效果不够理想，且重建效果依赖于较好的相机参数。
 
 *需要注意的是，方法在三维坐标点的采样策略上做了一些trick，直接在bounding box中均匀采样往往不能得到理想的结果，因为我们关注的是物体表面附近的信息；作者在三维模型的表面附近进行采样，每个顶点在$xyz$三个方向上进行抖动，抖动的距离符合高斯分布$\mathcal N(0, \sigma)$。作者将均匀采样和高斯采样两种方式相结合，可以取得更好的重建效果。
 
 ![alt text](/blog_resources/reading_summary/PIFu.png)
 
-****
+****PIFuHD: Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization****
+
+Summart:PIFu的升级版，PIFu使用低分辨率的图像进行几何重建，低分辨率的图像可以带来更大的感受野(空间信息)，但是会丢失几何细节。针对上述问题，PIFuHD使用两个网络进行几何重建：一个粗略估计重建对象的全局形状、另一个专注于重建局部的几何细节，然后将上述两个网络捕获到的信息进行融合，以重建出高精度的三维模型。网络的输入是单张RGB图像，大小为$1024 \times 1024$，粗略估计阶段，使用encoder将图像编码为大小为$128 \times 128$的特征，然后在深度信息的输入下通过MLP预测像素点在网格表面的概率；精确预测阶段，输入为单张$1024 \times 1024$的RGB图像以及对应的法线贴图(通过pix2pixHD得到)，得到大小为$512 \times 512$的图像特征，然后以该特征和粗略估计阶段得到的全局特征为输入同样通过MLP预测像素点在网格表面的概率。
+
+*需要关注的是，在重建误差的选取方面，作者并未采用常见的$L_{1}$或$L_{2}$误差项，而是选取了Extended BCE(Binary Cross Entropy)优化重建结果，当处于网格内外的坐标点数量不同时，损失函数会给数量较少的一方相对更大的权重。
+
+![alt text](/blog_resources/reading_summary/PIFuHD.png)
+
+**Physics-Inspired Garment Recovery from a Single-View Image**
+
+Summary:该工作可以根据单张图片重建出人体及三维服装模型，并根据估算得到的身体参数对服装尺码进行调整。输入为单视角图片，方法首先识别出图片中服装的种类，然后重建出对应姿态下的人体模型，并对人体的参数进行估计；其次，该方法使用识别出的服装种类在数据库中进行匹配，然后将匹配得到的三维服装模型注册至人体之上；然后，方法通过估算出的人体参数对服装样板进行调整以符合人体尺码，并通过物理仿真的方式迭代地更新服装参数，最终得到重建出的人体和服装模型。方法的问题在于服装重建依赖数据库中的模板匹配，如果数据库中没有对应预制的服装类型，则无法进行重建，这也导致方法无法对复杂款式的服装进行重建。
+
+![alt text](/blog_resources/reading_summary/SingleViewGarmentRecovery.png)
+
+**Interactive modeling of lofted shapes from a single image**
+
+Summary:这篇比较有意思，可以根据输入的单张图片和用户勾勒的边界约束放样出种类丰富的三维模型。用户需要指定的是放样的边界、放样路径及放样边界上部分关键点的对应关系，然后，方法对用户勾勒的放样边界进行插值以生成若干个中间放样路径。方法的问题在于只能做直筒形状的放养，如果放样路径不是唯一的，就比较麻烦。
+
+![alt text](/blog_resources/reading_summary/lofting.png)
+
+**Deep Fashion3D: A Dataset and Benchmark for 3D Garment Reconstruction from Single Images**
+
+![alt text](/blog_resources/reading_summary/DeepFashion3D_Dataset.png)
+
+![alt text](/blog_resources/reading_summary/DeepFashion3D_Network.png)
