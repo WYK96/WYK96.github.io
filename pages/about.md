@@ -87,5 +87,6 @@ weight: 3
 ## 出版信息
 
 
-1. 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. [[PDF]](/papers/garment_transfer.pdf)
-2. 石敏,**魏育坤**,金相臣,王素琴,毛天露.可支持跃层寻径的虚拟场景漫游方法[J]. 系统仿真学报, 2019, 31(07):1358-1366. [[PDF]](/papers/path_planning.pdf)
+· Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models(To appear), 2021 [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114)
+· 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. [[PDF]](/papers/garment_transfer.pdf)
+· 石敏,**魏育坤**,金相臣,王素琴,毛天露.可支持跃层寻径的虚拟场景漫游方法[J]. 系统仿真学报, 2019, 31(07):1358-1366. [[PDF]](/papers/path_planning.pdf)
