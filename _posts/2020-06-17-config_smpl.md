@@ -16,7 +16,7 @@ description: SMPL——参数化人体表示方法.
 # 创建虚拟环境
 # 虚拟环境的名称为SMPL
 # python版本为2.7
-sudo  conda create -n SMPL python=2.7
+conda create -n SMPL python=2.7
 # 激活虚拟环境
 conda activate SMPL
 ```
@@ -25,16 +25,16 @@ conda activate SMPL
 
 ```python
 # 安装numpy
-sudo conda install numpy
+conda install numpy
 # 安装scipy
-sudo conda install scipy
+conda install scipy
 # 安装chumpy
-sudo pip install chumpy
+pip install chumpy
 # 安装opencv
-sudo pip install opencv-python
+pip install opencv-python
 ```
 
-***Step4*** -> 安装opendr，这里需要注意，直接通过`sudo pip install opendr`安装会报如下错误：
+***Step4*** -> 安装opendr，这里需要注意，直接通过`pip install opendr`安装会报如下错误：
 
 <img src="/blog_resources/config_smpl/opendr_error.png" width="95%">
 
@@ -43,13 +43,13 @@ sudo pip install opencv-python
 
 ```python
 # 安装losmesa, lgl, lglu
-sudo apt install libosmesa6-dev
-sudo apt-get install build-essential
-sudo apt-get install libgl1-mesa-dev
-sudo apt-get install libglu1-mesa-dev
-sudo apt-get install freeglut3-dev
+apt install libosmesa6-dev
+apt-get install build-essential
+apt-get install libgl1-mesa-dev
+apt-get install libglu1-mesa-dev
+apt-get install freeglut3-dev
 # 安装opendr
-sudo pip install opendr
+pip install opendr
 ```
 
 ***Step5*** -> 从[SMPL官网](https://smpl.is.tue.mpg.de/downloads)下载 *SMPL for Python Users*这个工程，下在前需要在网站上注册账户。

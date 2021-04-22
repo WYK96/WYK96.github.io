@@ -18,7 +18,7 @@ description: AMASS——大规模人体运动数据集.
 # 创建虚拟环境
 # 虚拟环境的名称为AMASS
 # python版本为3.7
-sudo  conda create -n AMASS python=3.7
+conda create -n AMASS python=3.7
 # 激活虚拟环境
 conda activate AMASS
 ```
@@ -74,7 +74,7 @@ model的文件组织结构如下所示：
 
 ```python
 # 安装Jupyter Notebook
-sudo pip install jupyter 
+pip install jupyter 
 # 配置环境变量
 vim ~/.bashrc
 # 在文件最后输入如下两行
