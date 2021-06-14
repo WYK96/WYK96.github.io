@@ -53,6 +53,20 @@ weight: 3
 
 <table class="tg">
 	<tr >
+		<td class="tg-zv4m">中国科学院计算技术研究所</td>
+		<td class="tg-zv4m">前瞻研究实验室</td>
+		<td class="tg-zv4m">北京</td>
+	</tr>
+  <tr>
+    <td class="tg-zv4m">计算机图形学</td>
+    <td class="tg-zv4m">硕士(客座生)</td>
+    <td class="tg-zv4m">2019.09——现在</td>
+  </tr>
+</table>
+
+
+<table class="tg">
+	<tr >
 		<td class="tg-zv4m">台湾交通大学</td>
 		<td class="tg-zv4m">资讯学院</td>
 		<td class="tg-zv4m">新竹</td>
@@ -80,6 +94,23 @@ weight: 3
 		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="70%"></td>
 		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;大部分成衣的设计以标准比例的人模作为参照，而对于非标准体型的顾客，标码服装的大小尺寸则很难与之进行有效匹配。此外，由于不同服装的款式差异明显，且针对局部特征鲜明身型的调整规则相对有限，根据不同顾客的体型设计并制作出尺码合适、与样衣款式一致的服装是一件耗时且困难的工作。基于此，提出了一种基于实例数据驱动的服装款式迁移方法，可以为具有鲜明局部特征的人体快速生成符合其体型的服装，以期为非标尺码人体的个性化服装定制提供辅助。</td>
 	</tr>
+	
+</table>
+
+
+<table class="tg">
+	<tr >
+		<td class="tg-sci-project-name">群体服装动画方法研究</td>
+		<td class="tg-sci-project-date">2020年06月——现在</td>
+	</tr>
+</table>
+
+<table class="tg">
+	<tr >
+		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="70%"></td>
+		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;人体体型与姿态对服装弯曲变形的趋势性影响是确定的，因此，将人体体态对服装弯曲变形的分布性与趋势性的影响关系提取出来，有助于启发服装动画建模。基于此，通过建立人体体态与服装变形间的泛化关系，预测人体体态驱动下的服装变形。</td>
+	</tr>
+	
 </table>
 
 
@@ -92,3 +123,5 @@ weight: 3
 · 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. [[PDF]](/papers/garment_transfer.pdf)
 
 · 石敏,**魏育坤**,金相臣,王素琴,毛天露.可支持跃层寻径的虚拟场景漫游方法[J]. 系统仿真学报, 2019, 31(07):1358-1366. [[PDF]](/papers/path_planning.pdf)
+
+
