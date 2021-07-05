@@ -91,8 +91,8 @@ weight: 3
 
 <table class="tg">
 	<tr >
-		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="70%"></td>
-		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;大部分成衣的设计以标准比例的人模作为参照，而对于非标准体型的顾客，标码服装的大小尺寸则很难与之进行有效匹配。此外，由于不同服装的款式差异明显，且针对局部特征鲜明身型的调整规则相对有限，根据不同顾客的体型设计并制作出尺码合适、与样衣款式一致的服装是一件耗时且困难的工作。基于此，提出了一种基于实例数据驱动的服装款式迁移方法，可以为具有鲜明局部特征的人体快速生成符合其体型的服装，以期为非标尺码人体的个性化服装定制提供辅助。</td>
+		<td class="tg-sci-project-img"><img src="/about_resources/garment_transfer.png" width="90%"></td>
+		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;大部分成衣的设计以标准比例的人模作为参照，而对于非标准体型的顾客，标码服装的尺寸难以与之有效匹配。提出了一种基于实例数据的三维服装款式风格迁移方法，通过对布料变形成分进行解耦，提取出人体体型相关的服装变形，从而可以在目标体型人体上快速生成与样衣款式风格一致的服装模型。</td>
 	</tr>
 	
 </table>
@@ -107,8 +107,8 @@ weight: 3
 
 <table class="tg">
 	<tr >
-		<td class="tg-sci-project-img"><img src="/about_resources/transferred_garments.png" width="70%"></td>
-		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;人体体型与姿态对服装弯曲变形的趋势性影响是确定的，因此，将人体体态对服装弯曲变形的分布性与趋势性的影响关系提取出来，有助于启发服装动画建模。基于此，通过建立人体体态与服装变形间的泛化关系，预测人体体态驱动下的服装变形。</td>
+		<td class="tg-sci-project-img"><img src="/about_resources/virtual_fitting.png" width="90%"></td>
+		<td  class="tg-sci-project-abstract">&nbsp;&nbsp;人体运动对于服装变形有着显著影响，基于人体运动对三维服装进行变形预测，有助于启发服装动画建模。基于此，通过建立人体运动与服装变形间的泛化关系，预测人体运动驱动下的服装变形。提出了一种基于Transformer的服装动画方法，可根据人体运动表示实时地合成逼真、稳定的三维服装动画，该方法在时间效率上相较于物理仿真快1000倍。</td>
 	</tr>
 	
 </table>
