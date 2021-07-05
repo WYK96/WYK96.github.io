@@ -118,7 +118,7 @@ weight: 3
 ## 出版信息
 
 
-· Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models(To appear), 2021 [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114)
+· Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models, 115 (2021): 101106. [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114)
 
 · 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. [[PDF]](/papers/garment_transfer.pdf)
 
