@@ -6,14 +6,14 @@ color: success
 description: CVPR2020 Oral.
 ---
 
-![alt text](/blog_resources/tailornet/1.jpg)
+![alt text](/blog_resources/tailornet/1.JPG)
 
-![alt text](/blog_resources/tailornet/2.jpg)
+![alt text](/blog_resources/tailornet/2.JPG)
 
-![alt text](/blog_resources/tailornet/3.jpg)
+![alt text](/blog_resources/tailornet/3.JPG)
 
-![alt text](/blog_resources/tailornet/4.jpg)
+![alt text](/blog_resources/tailornet/4.JPG)
 
-![alt text](/blog_resources/tailornet/5.jpg)
+![alt text](/blog_resources/tailornet/5.JPG)
 
-![alt text](/blog_resources/tailornet/6.jpg)
+![alt text](/blog_resources/tailornet/6.JPG)
