@@ -32,7 +32,7 @@ weight: 3
 </style>
 
 <table class="tg">
-	<tr >
+	<tr>
 		<td class="tg-zv4m">华北电力大学</td>
 		<td class="tg-zv4m">控制与计算机工程学院</td>
 		<td class="tg-zv4m">北京</td>
@@ -51,12 +51,13 @@ weight: 3
 
 ## 交换经历
 
+
 <table class="tg">
-	<tr >
-		<td class="tg-zv4m">中国科学院计算技术研究所</td>
-		<td class="tg-zv4m">前瞻研究实验室</td>
-		<td class="tg-zv4m">北京</td>
-	</tr>
+  <tr>
+	<td class="tg-zv4m">中国科学院计算技术研究所</td>
+	<td class="tg-zv4m">前瞻研究实验室</td>
+	<td class="tg-zv4m">北京</td>
+  </tr>
   <tr>
     <td class="tg-zv4m">计算机图形学</td>
     <td class="tg-zv4m">硕士(客座生)</td>
@@ -66,7 +67,7 @@ weight: 3
 
 
 <table class="tg">
-	<tr >
+	<tr>
 		<td class="tg-zv4m">台湾交通大学</td>
 		<td class="tg-zv4m">资讯学院</td>
 		<td class="tg-zv4m">新竹</td>
@@ -77,6 +78,8 @@ weight: 3
     <td class="tg-zv4m">2018.09——2019.01</td>
   </tr>
 </table>
+
+
 
 
 ## 科研经历
