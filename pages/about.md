@@ -61,7 +61,7 @@ weight: 3
   <tr>
     <td class="tg-zv4m">计算机图形学</td>
     <td class="tg-zv4m">硕士(客座生)</td>
-    <td class="tg-zv4m">2019.09——现在</td>
+    <td class="tg-zv4m">2019.09——现&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在</td>
   </tr>
 </table>
 
