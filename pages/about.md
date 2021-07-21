@@ -40,7 +40,7 @@ weight: 3
   <tr>
     <td class="tg-zv4m">计算机科学与技术</td>
     <td class="tg-zv4m">硕士(推免生)</td>
-    <td class="tg-zv4m">2019.09——现在</td>
+    <td class="tg-zv4m">2019.09——现&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在</td>
   </tr>
   <tr>
     <td class="tg-zv4m">软件工程</td>
