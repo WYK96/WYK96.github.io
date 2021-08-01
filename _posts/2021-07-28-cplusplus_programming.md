@@ -15,7 +15,14 @@ string tmp = "123";
 nums.push_back(tmp); // 这里不能直接用字面值
 
 nums.emplace_back("123"); // 可以直接用字面值，隐式构造，和上面的效果一样
+
+// set 与 vector 转换
+unordered_set<int> hashSet{1,2,4,5,6};
+vector<int> vec;
+vec.assign(hashSet.begin(), hashSet.end());
+
 ```
+
 
 # pair用法
 ```C++
@@ -52,6 +59,7 @@ sort(v.begin(), v.end(), compare);
 
 ```
 
+
 # std
 
 ```C++
@@ -79,7 +87,10 @@ long double fabs(long double x);
 int a = 3, b = 5;
 int c = max(a, b);
 c = min(a, b);
+
+
 ```
+
 
 # string
 
@@ -89,4 +100,16 @@ c = min(a, b);
 # 子串
 string s = new string("123456");
 string sub_s = s.substr(0, 5); // returns s[0]-s[4]
+
+# 计数
+string s = "Hello C++";
+int space_num = count(s.begin(), s.end(), ' ');
+
+# 替换内容
+
+string s = "Hello C++ and Python";
+int space_num = count(s.begin(), s.end(), ' ');
+s.replace(s.find(" "), 1, "%123"); // 空格开始的第1个字符替换成%123
+// out: Hello%123C++%123and%123Python
+
 ```

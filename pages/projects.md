@@ -52,14 +52,3 @@ weight: 3
 
 ![alt text](/projects_resources/tank3.png)
 
-
-**像素风射击游戏**
-
-*来源:软件工程课程设计*
-
-![alt text](/projects_resources/shoot1.png)
-
-![alt text](/projects_resources/shoot2.png)
-
-![alt text](/projects_resources/shoot3.png)
-

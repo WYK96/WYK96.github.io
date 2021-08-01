@@ -124,3 +124,72 @@ public:
     }
 };
 ```
+
+
+## 复杂度分析
+
+若总共有$M$个键，则空间复杂度为$O(M)$。
+
+通常情况下，插入和搜索的时间复杂度为$O(1)$。
+
+最坏情况下，若桶大小的最大值为$N$，则插入时间复杂度为$O(1)$,搜索时间复杂度为$O(N)$。
+
+
+## 内置哈希表原理
+
+* 键值是任何可哈希化的类型，其具有哈希码，哈希码用于映射函数以获取存储区索引。
+
+* 每个桶包含一个数组，用于在初始化时将所有值存储在同一个桶中。
+
+* 插入和搜索的平均时间复杂度为$O(1)$，最坏情况下的插入和搜索的时间复杂度是$O(logN)$，使用高度平衡的二叉搜索树。
+
+
+## STL中的unordered_set
+
+unordered_set是STL中hash set的实现
+
+```C++
+int main(){
+    unordered_set<int> hashSet;
+    hashSet.insert(3);
+    hashSet.insert(4);
+    hashSet.insert(5);
+
+    hashSet.delete(3);
+
+    if(hashSet.count(7) <= 0>){
+        cout << "Key 7 is not in the hash set". << endl;
+    }
+
+    cout << "The size of hash set is : " << hashSet.size() << endl;
+
+    for(auto it = hashSet.begin(); it != hashSet.end(); ++it){
+        cout << (*it) << " ";
+    }
+
+    hashSet.clear(); // clear the hash set
+
+    if(hashSet.empty()){
+        cout << "Hash set is empty." << endl;
+    }
+}
+```
+
+
+## 应用
+
+
+### 查重
+
+```C++
+bool findDuplicates(vector<int>& keys){
+    unordered_set<int> hashSet;
+    for(const int& key : keys){
+        if(hashSet.count(key) > 0){
+            return true;
+        }
+        hashSet.insert(key);
+    }
+    return false;
+}
+```
