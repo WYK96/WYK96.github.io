@@ -11,7 +11,7 @@ description: 游戏中所需的三维数学.
 
 顺时针：
 
-**Step1**: 沿水平轴旋转 $$ matrix[row, col] $$ -> $$ matrix[N-row-1, col]
+**Step1**: 沿水平轴旋转 $$ matrix[row, col] $$ -> $$ matrix[N-row-1, col] $$
 
 **Step2**: 沿对角线旋转 $$ matrix[row, col] $$ -> $$ matrix[col, row] $$
 
