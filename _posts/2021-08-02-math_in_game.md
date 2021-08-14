@@ -20,7 +20,7 @@ $$ matrix[row, col] $$ -> $$ matrix[N-row-1, col] $$ -> $$ matrix[col, N-row-1] 
 
 逆时针：
 
-**Step1**: 沿树直轴旋转 $$ matrix[row, col] $$ -> $$ matrix[row, N-col-1]
+**Step1**: 沿树直轴旋转 $$ matrix[row, col] $$ -> $$ matrix[row, N-col-1] $$
 
 **Step2**: 沿对角线旋转 $$ matrix[row, col] $$ -> $$ matrix[col, row] $$
 

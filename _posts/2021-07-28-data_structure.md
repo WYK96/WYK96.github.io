@@ -6,6 +6,19 @@ color: primary
 description: 基本数据结构的总结.
 ---
 
+
+# 数组和字符串
+
+**集合** ： 由一个或多个确定的元素所构成的整体。特点：集合内元素类型不一定相同，且无序。
+
+**列表** ：一种数据项构成的有限序列，按照一定的线性顺序排列而成的数据项的集合。特点：有序、长度可变。存储方式：连续存储或非连续存储。常见形式：数组和列表、栈和队列。
+
+**数组**：列表的表现形式之一。特点：具有索引，有序，长度可变。存储方式：连续存储。
+
+
+# 并查集
+
+
 # 链表
 
 **单链表**
@@ -422,4 +435,53 @@ public:
         return max(left_depth, right_depth) + 1;
     }
 }
+```
+
+树的遍历思路：
+* 前序遍历
+* 中序遍历
+* 后序遍历
+* BFS
+* DFS
+
+
+# 并查集
+
+```C++
+class UnionFind{
+private:
+    vector<int> parent;
+    vector<int> rank;
+
+public:
+    UnionFind(int max_size) : parent(vector<int>(max_size)),
+                              rank(vector<int>(max_size, 0))
+    {
+        for(int i = 0; i < max_size; i++){
+            parent[i] = i;
+        }
+    }
+
+    int find(int x){
+        return (parent[x] == x) ? x : find(parent[x]);
+    }
+
+    void to_union(int x1, int x2){
+        int f1 = find(x1);
+        int f2 = find(x2);
+        if(rank[f1] > rank[f2]){
+            parent[f2] = f1;
+        }
+        else{
+            parent[f1] = f2;
+            if(rank[f1] == rank[f2]){
+                ++rank[f2];
+            }
+        }
+    }
+
+    bool is_same(int e1, int e2){
+        return find(e1) == find(e2);
+    }
+};
 ```
