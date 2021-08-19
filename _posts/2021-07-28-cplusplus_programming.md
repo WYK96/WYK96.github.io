@@ -49,8 +49,9 @@ count(InputIterator first, InputIterator last, const T& val);
 
 //sort
 vector<int> v;
-sort(v.begin(), v.end())
-sort(v.begin(), v.begin()+5)
+sort(v.begin(), v.end());
+sort(v.begin(), v.begin()+5);
+sort(first_pointer, first_pointer+n, cmp);
 
 bool compare(int a, int b){
     return a > b;
@@ -67,7 +68,7 @@ sort(v.begin(), v.end(), compare);
 // 字符串反转
 int x = 123;
 string str = std::to_string(x);
-string str_reverse = std::reverse(str.begin(), str.end());
+std::reverse(str.begin(), str.end());
 
 // 交换值
 float a = 1.23, b = 4.25;
@@ -98,18 +99,69 @@ c = min(a, b);
 #include <string>
 
 # 子串
+string substr(size_t pos = 0, size_t len = npos) const;
+
 string s = new string("123456");
-string sub_s = s.substr(0, 5); // returns s[0]-s[4]
+string sub_s = s.substr(1, 5); // returns s[1]-s[5]
 
 # 计数
 string s = "Hello C++";
 int space_num = count(s.begin(), s.end(), ' ');
 
 # 替换内容
-
 string s = "Hello C++ and Python";
 int space_num = count(s.begin(), s.end(), ' ');
 s.replace(s.find(" "), 1, "%123"); // 空格开始的第1个字符替换成%123
 // out: Hello%123C++%123and%123Python
 
+# 比较，相同输出0，不同输出1
+string s1 = "Hello world";
+string s2 = s1 + "123";
+cout << s1.compare(s2) << endl;
+
+# 调整大小
+string s = "Computer Graphics";
+s.resize(10);
+s.resize(20, '!');
+
 ```
+
+
+# numeric
+
+```C++
+# 累加
+int sum = accumulate(v.begin(), v.end(), 0);
+```
+
+# 右值引用
+
+左值：等号左边的值，可以取地址；
+右值：等号右边的值，不能取地址；
+
+左值引用：能指向左值但不能指向右值的引用，以&进行标识。
+
+（例外：const左值引用可以指向右值）
+
+右值引用：可以指向右值但不能指向左值的引用，以&&进行标识
+
+```C++
+int &&ref_a_right = 5;  // ok
+
+int a = 4;
+int &&ref_a_left = a; // 错误，右值引用不能指向左值
+
+ref_a_right = 6; // 可以修改右值
+```
+
+右值可以通过std::move指向左值
+
+```C++
+int a = 5;
+int &ref_a_left = a;
+int &&ref_a_right = std::move(a);
+```
+
+被声明出来的左右值引用都是左值，因为它们都有地址，且位于等号左边。
+
+右值引用既可以是左值，也能是右值，如果有名称则为左值，否则是右值。
