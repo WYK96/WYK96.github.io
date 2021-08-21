@@ -7,24 +7,6 @@ description: 常见排序算法的C++实现.
 ---
 
 
-
-```C++
-class mySort {
-public:
-	mySort() {};
-	virtual vector<int> callSort(vector<int> nums) {
-		return vector<int>();
-	}
-	void printArray(vector<int> nums) {
-		for (int i = 0; i < nums.size(); i++) {
-			cout << nums[i] << " ";
-		}
-		cout << endl;
-	}
-};
-```
-
-
 # 1 冒泡排序
 
 双重循环遍历数组，两两比较，并将最大值/最小值交换到最后一位
