@@ -51,6 +51,7 @@ weight: 3
 ## 交换经历
 
 
+
 <table class="tg">
   <tr>
 	<td class="tg-zv4m">中国科学院计算技术研究所</td>
@@ -59,10 +60,11 @@ weight: 3
   </tr>
   <tr>
     <td class="tg-zv4m">计算机图形学</td>
-    <td class="tg-zv4m">硕士(客座生)</td>
+    <td class="tg-zv4m">硕士(实习生)</td>
     <td class="tg-zv4m">2019.09——现&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在</td>
   </tr>
 </table>
+
 
 
 <table class="tg">
@@ -120,11 +122,11 @@ weight: 3
 ## 出版信息
 
 
-* Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models, 115 (2021): 101106. [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114) [[PDF]](/papers/P_21_GMOD.pdf)
+* Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models, 115 (2021): 101106. **(EI, SCI, CCF B类期刊)** [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114) [[PDF]](/papers/P_21_GMOD.pdf)
 
-* 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. [[PDF]](/papers/garment_transfer.pdf)
+* 石敏,**魏育坤**,王俊铮,毛天露.面向不同体型特征的服装款式迁移方法[J].图学学报, 2019, 40(05):866-871. **(一级学报)** [[PDF]](/papers/garment_transfer.pdf)
 
-* 石敏,**魏育坤**,金相臣,王素琴,毛天露.可支持跃层寻径的虚拟场景漫游方法[J]. 系统仿真学报, 2019, 31(07):1358-1366. [[PDF]](/papers/path_planning.pdf)
+* 石敏,**魏育坤**,金相臣,王素琴,毛天露.可支持跃层寻径的虚拟场景漫游方法[J]. 系统仿真学报, 2019, 31(07):1358-1366. **(一级学报)** [[PDF]](/papers/path_planning.pdf)
 
 
 ## 专业技能
@@ -139,13 +141,15 @@ weight: 3
 ## 获奖情况
 
 * 2017年，获得北京市大学生数学建模竞赛二等奖，省部级
-* 2018年，获得北京市互联网+创新创业大赛三等奖，省部级
+* 2018年，获得中国“互联网+”大学生创新创业大赛北京赛区三等奖，省部级
 * 2018年，获得华北电力大学一等奖学金，院校级；
 * 2019年，获得华北电力大学一等奖学金，院校级；
 * 2020年，获得华北电力大学一等奖学金，院校级；
+* 2021年，获得华北电力大学一等奖学金，院校级；
 * 2019年10月，获得北京市本科优秀毕业设计，省部级；
 * 2018年，获得华北电力大学三好学生称号，院校级；
 * 2020年，获得华北电力大学优秀研究生称号，院校级；
+* 2021年，获得华北电力大学优秀研究生称号，院校级；
 * 2020年，获得华北电力大学优秀团员称号，院校级；
-
+* 2021年，获得内蒙古阿拉善盟最美家庭称号，市级；
 
