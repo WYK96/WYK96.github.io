@@ -1,12 +1,11 @@
 ---
-title: deformation transfer for triangle meshes
+title: "deformation transfer for triangle meshes"回顾
 tags: [论文阅读]
 style: fill
 color: dark
 description: 非常经典的一篇paper.
 ---
 
-# 《Deformation Transfer for Triangle Meshes》回顾
 
 
 之前garment transfer的project中有使用到deformation gradient作为deformation representation，deformation gradient这个概念出自Sumner于04年在TOG上发表的一篇paper “Deformation Transfer for Triangle Meshes”，现进行回顾。
@@ -45,7 +44,9 @@ $$ Qv_{i} + d = \tilde{v}_{i}, i \in 1...4 $$
 将$$ v_{1},...,v_{4} $$ 代入上式，可消除d，得到$$ QV = \tilde{V} $$，其中：
 
 $$ V = [v_{2} - v_{1}, v_{3} - v_{1}, v_{4} - v_{1}] $$
+
 $$ \tilde{V} = [\tilde{v}_{2} - \tilde{v}_{1}, \tilde{v}_{3} - \tilde{v}_{1}, \tilde{v}_{4} - \tilde{v}_{1}] $$
+
 
 则deformation gradient（Q）可表示为：
 
