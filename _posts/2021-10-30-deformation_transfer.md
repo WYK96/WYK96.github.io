@@ -86,6 +86,6 @@ $$ T_{j}v_{i} + d_{j} = T_{k}v_{i} + d_{k}, \quad \forall i, \forall j,k \in p(v
 
 那么共点约束的目标方程可改写为：
 
-$$ \underset{T_{1} + d, ..., T_{|T|} + d_{|T|}}{min} \sum_{j=1}^{|M|} || S_{S_{j}} - T_{t_{j}} {||}_{F}^{2} \\ s.t. \quad T_{j}v_{i} + d_{j} = T_{k}v_{i} + d_{k}, \quad \forall i, \forall j,k \in p(v_{i}) $$
+$$ \underset{T_{1} + d_{1}, ..., T_{|T|} + d_{|T|}}{min} \sum_{j=1}^{|M|} || S_{S_{j}} - T_{t_{j}} {||}_{F}^{2} \\ s.t. \quad T_{j}v_{i} + d_{j} = T_{k}v_{i} + d_{k}, \quad \forall i, \forall j,k \in p(v_{i}) $$
 
-这样便可求解出 $$ T_{1} + d, ..., T_{|T|} + d_{|T|} $$ 。paper中还对这个解法进行了进一步优化，可以直接求解出deformed vertices，这里不再展开了。
+这样便可求解出 $$ T_{1} + d_{1}, ..., T_{|T|} + d_{|T|} $$ 。paper中还对这个解法进行了进一步优化，可以直接求解出deformed vertices，这里不再展开了。
