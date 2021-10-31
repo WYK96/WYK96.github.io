@@ -1,11 +1,10 @@
 ---
-title: "deformation transfer for triangle meshes"回顾
+title: 《deformation transfer for triangle meshes》回顾
 tags: [论文阅读]
 style: fill
 color: dark
 description: 非常经典的一篇paper.
 ---
-
 
 
 之前garment transfer的project中有使用到deformation gradient作为deformation representation，deformation gradient这个概念出自Sumner于04年在TOG上发表的一篇paper “Deformation Transfer for Triangle Meshes”，现进行回顾。
