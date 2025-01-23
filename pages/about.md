@@ -7,17 +7,14 @@ weight: 3
 
 ## 关于我
 
-硕士毕业于华北电力大学控制与计算机工程学院计算机科学与技术专业
-
-17600558165 \| wyk@ncepu.edu.cn \| wei967740
+17600558165 \| ncepu_wyk@outlook.com \| wei967740
 
 ## 研究领域
 
 * 深度几何学习与服装动画，包括布料仿真、布料变形分析、基于深度学习方法的虚拟服装生成等。
 * 虚拟现实，包括三维图形生成、动态环境建模、快速渲染处理等。
 
-## 教育背景
-
+## 工作经历
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:100%}
@@ -29,6 +26,22 @@ weight: 3
 .tg .tg-sci-project-img{background-color:#ffffff;border-color:#ffffff;text-align:center;vertical-align:center;}
 .tg .tg-sci-project-abstract{background-color:#ffffff;border-color:#ffffff;text-align:;vertical-align:center;}
 </style>
+
+<table class="tg">
+  <tr>
+	<td class="tg-zv4m">商汤科技</td>
+	<td class="tg-zv4m"></td>
+	<td class="tg-zv4m">上海</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">算法研究员</td>
+    <td class="tg-zv4m"></td>
+    <td class="tg-zv4m">2022.07——现&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在</td>
+  </tr>
+</table>
+
+## 教育背景
+
 
 <table class="tg">
 	<tr>
@@ -61,7 +74,7 @@ weight: 3
   <tr>
     <td class="tg-zv4m">计算机图形学</td>
     <td class="tg-zv4m">硕士(实习生)</td>
-    <td class="tg-zv4m">2019.09——现&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在</td>
+    <td class="tg-zv4m">2019.09——2022.06</td>
   </tr>
 </table>
 
@@ -121,6 +134,7 @@ weight: 3
 
 ## 出版信息
 
+* **Wei Y K**, Shi M, Feng W K, et al. Motion-Inspired Real-Time Garment Synthesis with Temporal-Consistency[J]. Journal of Computer Science and Technology, 2023, 38(6): 1356-1368.
 
 * Min Shi, **Yukun Wei**, Lan Chen, Tianlu Mao, Dengming Zhu, Zhaoqi Wang. Learning a Shared Deformation Space for Efficient Design-Preserving Garment Transfer[J], Graphical Models, 115 (2021): 101106. **(EI, SCI, CCF B类期刊)** [[WEBSITE]](https://www.sciencedirect.com/science/article/pii/S1524070321000114) [[PDF]](/papers/P_21_GMOD.pdf)
 
@@ -140,17 +154,18 @@ weight: 3
 
 ## 获奖情况
 
-* 2017年，获评北京市大学生数学建模竞赛二等奖，省部级
-* 2018年，获评中国“互联网+”大学生创新创业大赛北京赛区三等奖，省部级
-* 2018年，获评华北电力大学一等奖学金，院校级；
-* 2019年，获评华北电力大学一等奖学金，院校级；
-* 2020年，获评华北电力大学一等奖学金，院校级；
-* 2021年，获评华北电力大学一等奖学金，院校级；
-* 2021年，获评研究生国家奖学金，国家级；
-* 2019年，获评北京市本科优秀毕业设计，省部级；
-* 2018年，获评华北电力大学三好学生称号，院校级；
-* 2020年，获评华北电力大学优秀研究生称号，院校级；
-* 2021年，获评华北电力大学优秀研究生称号，院校级；
-* 2020年，获评华北电力大学优秀团员称号，院校级；
-* 2021年，获评内蒙古阿拉善盟最美家庭称号，市级；
+* 2021年，研究生国家奖学金，国家级；
+* 2022年，北京市优秀毕业生，省部级；
+* 2019年，北京市本科优秀毕业设计，省部级；
+<br>
+* 2017年，北京市大学生数学建模竞赛二等奖，省部级
+* 2018年，中国“互联网+”大学生创新创业大赛北京赛区三等奖，省部级
+* 2018年，华北电力大学一等奖学金，院校级；
+* 2019年，华北电力大学一等奖学金，院校级；
+* 2020年，华北电力大学一等奖学金，院校级；
+* 2021年，华北电力大学一等奖学金，院校级；
+* 2018年，华北电力大学三好学生称号，院校级；
+* 2020年，华北电力大学优秀研究生称号，院校级；
+* 2021年，华北电力大学优秀研究生称号，院校级；
+* 2020年，华北电力大学优秀团员称号，院校级；
 
